@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int a, b, *p1, *p2, sum, diff;
+    scanf("%d %d", &a, &b);
+    p1= &a;
+    p2= &b;
+    sum = *p1 + *p2;
+    diff =abs(*p1 - *p2);
+    printf("%d\n%d", sum, diff);
+    return 0;
+}
